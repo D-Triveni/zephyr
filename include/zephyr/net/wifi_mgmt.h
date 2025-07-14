@@ -1729,6 +1729,16 @@ void wifi_mgmt_raise_ap_sta_connected_event(struct net_if *iface,
 void wifi_mgmt_raise_ap_sta_disconnected_event(struct net_if *iface,
 		struct wifi_ap_sta_info *sta_info);
 
+/*
+#ifdef CONFIG_WIFI_NM_WPA_SUPPLICANT_CRYPTO_ENTERPRISE
+** Set Wi-Fi enterprise credentials
+ * @param iface Network interface
+ * @param AP or Station mode
+ *
+static int wifi_set_enterprise_creds(struct net_if *iface,
+		bool is_ap);
+#endif*/
+
 /**
  * @}
  */
